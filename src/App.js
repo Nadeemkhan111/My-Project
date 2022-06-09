@@ -27,11 +27,11 @@ function App() {
 
       {/* <Apifetch /> */}
       {/* <Todotask /> */}
-      {/* <TodoCard /> */}
+      <TodoCard />
       {/* <ApiCard /> */}
       {/* <TodoList1 /> */}
       {/* <CounterFile /> */}
-      <TodolistTask/>
+      {/* <TodolistTask/> */}
       {/* <Chat/> */}
     </div>
   );

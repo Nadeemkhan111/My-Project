@@ -22,8 +22,17 @@ export const TodoCard=()=>{
         const filtered=list.filter((item)=>item !==elem)
         setList(filtered)
     }
+    const handleDelete1=(item)=>{
+        const filtered1=list1.filter((elem)=>elem !==item)
+        setList1(filtered1)
+    }
+    const handleDelete2=(item)=>{
+        const filtered2=list2.filter((elem)=>elem !==item)
+        setList2(filtered2)
+    }
     return(
         <div>
+            
             <Grid container>
                 <Card >
                     <CardContent>
@@ -48,7 +57,7 @@ export const TodoCard=()=>{
                         {
                             list1.map((elem)=>{
                                 return(
-                                    <li>{elem}</li>
+                                    <li>{elem} <Button variant="outlined" color="error" onClick={()=>handleDelete1(elem)}>Delete</Button> </li>
                                 )
                             })
                         }
@@ -62,7 +71,7 @@ export const TodoCard=()=>{
                         {
                             list2.map((elem2)=>{
                                 return(
-                                    <li>{elem2}</li>
+                                    <li>{elem2} <Button variant="outlined" color="error" onClick={()=>handleDelete2(elem2)}>Delete</Button> </li>
                                 )
                             })
                         }
